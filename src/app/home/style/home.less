@@ -11,6 +11,25 @@
     text-overflow:ellipsis;
     white-space: nowrap;    
 };
+@ant-tabs: {
+    .ant-tabs {
+        float: left;
+        width: 32%;
+        .ant-tabs-ink-bar {
+            left: -9px;
+            width: 95px !important;
+            background: @light-blue;
+        }
+        .ant-tabs-tab {
+            padding-left: 4px;
+            color: @light-blue;
+        }
+        .ant-tabs-nav {
+            float: left;
+            padding-left: 5px;
+        }
+    }
+};
 
 .ant-card-body {
     padding: 0
@@ -31,7 +50,7 @@
             width: 88%;
             margin-left: @menu-padding-left;
             background: #F9F9F9;
-            padding: 50px 0 45px 0;
+            padding: 50px 0 40px 0;
             .ant-col-10 {
                 margin-left: 38%;
                 ul {
@@ -129,6 +148,7 @@
                         .ant-card-meta-title {
                             border-bottom: 1px dashed #ddd;
                             padding-bottom: 10px;
+                            margin-top: 20px;
                             h3 {
                                 &:first-child {
                                     color: #3076bc;
@@ -229,21 +249,7 @@
                     position: absolute;
                     right: 32px;
                 }
-                .ant-tabs {
-                    float: left;
-                    width: 32%;
-                    .ant-tabs-ink-bar {
-                        left: -9px;
-                        width: 95px !important;
-                    }
-                    .ant-tabs-tab {
-                        padding-left: 4px;
-                    }
-                    .ant-tabs-nav {
-                        float: left;
-                        padding-left: 5px;
-                    }
-                }
+                @ant-tabs();
                 .ant-card-extra {
                     a {
                         color: #9E9E9E;
@@ -326,7 +332,6 @@
 
 @navlist-box: {
     .navlist-box {
-        // float: left;
         margin-top: @home-gutter;
         .ant-card {
             &:not(:first-child) {
@@ -365,21 +370,7 @@
                     position: absolute;
                     right: 32px;
                 }
-                .ant-tabs {
-                    float: left;
-                    width: 32%;
-                    .ant-tabs-ink-bar {
-                        left: -9px;
-                        width: 95px !important;
-                    }
-                    .ant-tabs-tab {
-                        padding-left: 4px;
-                    }
-                    .ant-tabs-nav {
-                        float: left;
-                        padding-left: 5px;
-                    }
-                }
+                @ant-tabs();
                 .ant-card-extra {
                     a {
                         color: #9E9E9E;
@@ -424,21 +415,7 @@
                     position: absolute;
                     right: 32px;
                 }
-                .ant-tabs {
-                    float: left;
-                    width: 32%;
-                    .ant-tabs-ink-bar {
-                        left: -9px;
-                        width: 95px !important;
-                    }
-                    .ant-tabs-tab {
-                        padding-left: 4px;
-                    }
-                    .ant-tabs-nav {
-                        float: left;
-                        padding-left: 5px;
-                    }
-                }
+                @ant-tabs();
                 .ant-card-extra {
                     a {
                         color: #9E9E9E;
