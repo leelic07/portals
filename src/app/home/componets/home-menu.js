@@ -32,7 +32,7 @@ class HomeMenu extends Component {
           mode="horizontal"
           defaultSelectedKeys={['0']}
           style={{
-            lineHeight: '70px',
+            lineHeight: '60px',
             background: '#3076bc',
           }}>
           {menuList}

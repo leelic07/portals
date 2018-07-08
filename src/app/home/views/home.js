@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HomeMenu from '../componets/home-menu';
 import HomeContent from '../componets/home-content';
+import HomeFooter from '../componets/home-footer'
 import { Layout } from 'antd';
 const { Header, Content, Footer } = Layout;
 
@@ -13,7 +14,9 @@ class Home extends Component {
           <HomeMenu></HomeMenu>
           <HomeContent></HomeContent>
         </Content>
-        <Footer>Footer</Footer>
+        <Footer>
+          <HomeFooter></HomeFooter>
+        </Footer>
       </Layout>
     );
   }

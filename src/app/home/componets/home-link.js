@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Card, Col } from 'antd'
-import imageUrl from '../../../assets/images/timg.jpg'
 
 class HomeLink extends Component {
   constructor(props) {
@@ -30,11 +29,13 @@ class HomeLink extends Component {
   render() {
     const linkList = <ul>{this.linkList.map((link, index) =>
       <li key={index}>
-        <a href={link.url} alt={index}>{link.name}</a>
+        {/* <a href={link.url} alt={index}>{link.name}</a> */}
+        <span>{link.name}</span>
+        <i></i>
       </li>
     )}</ul>
     return (
-      <Col className="inspector-box">
+      <Col className="link-box">
         <Card
           style={{ width: '100%' }}
           extra={<a href="" onClick={(e) => { e.preventDefault() }}>查看更多></a>}
